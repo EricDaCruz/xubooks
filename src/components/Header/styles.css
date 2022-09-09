@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Varela&display=swap");
+/*---------- Logo Area ----------*/
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #242121;
+   max-width: 100%;
+   width: 100%;
+   height: 80px;
+   padding: 0 9rem;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   font-family: "Varela", sans-serif;
+}
+.logo img {
+   width: 6rem;
+   height: 6rem;
+   margin-right: 6rem;
+}
+.logo p {
+   color: #fff;
+   font-weight: 400;
+   font-size: 3rem;
+}
+.logo p span {
+   font-weight: 100;
+   font-size: 2.4rem;
+   font-family: "Roboto", sans-serif;
+}
+/*---------- Search Area ----------*/
+.container-search {
+   background-color: #373737;
+   max-width: 670px;
+   height: 3.3rem;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   border-radius: 4px;
+   padding: 0 1.2rem;
+}
+.content-search {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+.content-search svg {
+   width: 2.5rem;
+   height: 2.5rem;
+   color: #808080;
+}
+.content-search input {
+   flex: 1;
+   width: 100%;
+   height: 100%;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   color: #fff;
+   font-size: 1.6rem;
+}
+/*---------- Nav Area ----------*/
+.content-links {
+   font-family: "Roboto", sans-serif;
+   display: flex;
+   align-items: center;
+   gap: 4rem;
+   margin-left: auto;
+   color: #fff;
+}
+.content-links li {
+   list-style-type: none;
+   font-size: 2rem;
+}
+.content-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.content-links li.active a{
+    color:#908DF2;
+    text-decoration: underline;
+}
+.content-links li a:hover{
+    color:#908DF2;
+}
