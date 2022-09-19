@@ -3,12 +3,12 @@
 .header {
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   background-color: #242121;
+   justify-content: space-evenly;
+   background-color: #292828;
    max-width: 100%;
    width: 100%;
    height: 80px;
-   padding: 0 9rem;
+   position: fixed;
 }
 .logo {
    display: flex;

@@ -1,0 +1,64 @@
+.content-card {
+   baclground-color: #fff;
+   max-width: 60rem;
+   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+   background: rgba(113, 197, 244, 0.38);
+   display: flex;
+   border-radius: 5px;
+   align-items: center;
+}
+
+.content-card .content-card-image {
+   width: 100%;
+   max-width: 25rem;
+   transform: scale(1.15);
+}
+
+.content-card .image-card {
+   transform: rotate(-3.5deg);
+   width: 100%;
+   object-fit: cover;
+}
+
+.content-text {
+   margin-left: 2rem;
+   max-height: 27rem;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   color: #fff;
+   gap: 1.5rem;
+}
+.content-text .title-card {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 3.5rem;
+}
+.content-text .description-card {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 1.5rem;
+}
+.content-text .genre-card {
+   font-family: "Roboto";
+   font-weight: 300;
+   font-size: 1.5rem;
+}
+.content-text .button-card {
+   border: 1px solid #fff;
+   padding: 0.7rem 0;
+   width: 14rem;
+   font-family: "Roboto";
+   font-weight: 300;
+   font-size: 1.7rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.content-text .button-card:hover {
+   background-color: #fff;
+   color: #000;
+   font-weight: 300;
+}
