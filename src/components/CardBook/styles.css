@@ -1,64 +1,61 @@
 .content-card {
-   baclground-color: #fff;
-   max-width: 60rem;
-   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-   background: rgba(113, 197, 244, 0.38);
    display: flex;
+   background: rgba(113, 197, 244, 0.38);
+   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+   max-width: 48rem;
+   min-height: 28rem;
    border-radius: 5px;
-   align-items: center;
 }
 
 .content-card .content-card-image {
+   margin-right: 3rem;
    width: 100%;
-   max-width: 25rem;
-   transform: scale(1.15);
+   transform: rotate(-3.5deg);
 }
 
 .content-card .image-card {
-   transform: rotate(-3.5deg);
    width: 100%;
-   object-fit: cover;
+   height: 100%;
+   transform: scale(1.3, 1.1);
 }
 
 .content-text {
-   margin-left: 2rem;
-   max-height: 27rem;
-   height: 100%;
+   padding: 2rem 1rem 2rem 0;
+   color: #fff;
    display: flex;
    flex-direction: column;
    align-items: center;
-   text-align: center;
-   color: #fff;
-   gap: 1.5rem;
+   justify-content: space-between;
 }
 .content-text .title-card {
    font-family: "Roboto";
-   font-style: normal;
    font-weight: 700;
    font-size: 3.5rem;
 }
 .content-text .description-card {
    font-family: "Roboto";
    font-weight: 400;
-   font-size: 1.5rem;
+   font-size: 12px;
+   text-align: justify;
 }
 .content-text .genre-card {
    font-family: "Roboto";
+   font-style: normal;
    font-weight: 300;
-   font-size: 1.5rem;
+   font-size: 12px;
 }
 .content-text .button-card {
-   border: 1px solid #fff;
-   padding: 0.7rem 0;
-   width: 14rem;
    font-family: "Roboto";
    font-weight: 300;
-   font-size: 1.7rem;
-   cursor: pointer;
+   font-size: 17px;
+   border: 1px solid #fff;
+   width: 15rem;
+   text-align: center;
+   padding: 0.7rem;
    transition: all 0.3s ease;
 }
 .content-text .button-card:hover {
-   background-color: #fff;
+   background: #fff;
    color: #000;
-   font-weight: 300;
+   cursor: pointer;
 }

@@ -1,0 +1,71 @@
+.content-arrow {
+   margin-top: 1.5rem;
+   margin-left: 3rem;
+   font-size: 2.5rem;
+   cursor: pointer;
+}
+.content-arrow a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.content-info {
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+   gap: 6rem;
+}
+
+.content-book-text {
+   max-width: 600px;
+}
+.content-book-text h2 {
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 6rem;
+}
+.content-book-text .genre {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 2rem;
+}
+.content-book-text .description {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 24px;
+   color: #d2d2d2;
+   margin-top: 4rem;
+}
+.content-book-text .content-info-book {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 2rem;
+   display: flex;
+   align-items: center;
+   gap: 3.4rem;
+   margin-top: 6rem;
+}
+.content-book-text .content-info-book strong {
+   font-weight: 700;
+}
+
+.content-button {
+   margin-top: 9rem;
+   display: flex;
+   justify-content: flex-end;
+   gap: 8rem;
+}
+.content-button button.btn {
+   box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+   padding: 0.8rem 3rem;
+   cursor: pointer;
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 2rem;
+   background: #E1B849;
+}
+.content-button button.btn.pdf {
+   background: #908DF2;
+}
