@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export function CardBook() {
@@ -18,7 +19,7 @@ export function CardBook() {
                dui vulputate magna.
             </p>
             <p className="genre-card">Detective-Love-History</p>
-            <a className="button-card">Now Read!</a>
+            <Link to="/book/id" className="button-card">Now Read!</Link>
          </div>
       </div>
    );
