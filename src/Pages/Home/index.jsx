@@ -1,9 +1,9 @@
 import { CardBook } from "../../components/CardBook";
 import { Header } from "../../components/Header";
+/* Info */
+import { Books } from "../../db/books";
 
 import "./styles.css";
-
-const books = Array(5).fill(true)
 
 export function Home() {
    return (
@@ -11,7 +11,7 @@ export function Home() {
          <Header />
          <div className="content">
             {
-               books.map((book, index) => (
+               Books.map((book, index) => (
                   <CardBook key={index} book={book}/>
                ))
             }
