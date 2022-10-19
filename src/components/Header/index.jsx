@@ -25,8 +25,8 @@ export const Header = () => {
                <li className={`link ${location === '/' && 'active'}`}>
                   <Link to="/">Obras</Link>
                </li>
-               <li className={`link ${location === '/quiz' && 'active'}`}>
-                  <Link to="/quiz">Quiz</Link>
+               <li className={`link ${location === '/community' && 'active'}`}>
+                  <Link to="/community">Comunidade</Link>
                </li>
                <li className={`link ${location === '/team' && 'active'}`}>
                   <Link to="/team">Equipe</Link>
