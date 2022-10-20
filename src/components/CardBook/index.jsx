@@ -20,7 +20,7 @@ export function CardBook({book}) {
                  book.genre.join(' - ')
                }
             </p>
-            <Link to={`/book/${book.id}`} className="button-card">Now Read!</Link>
+            <Link to={`/book/${book.id}`} className="button-card">Saiba Mais!</Link>
          </div>
       </div>
    );
