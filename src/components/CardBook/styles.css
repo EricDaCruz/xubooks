@@ -22,7 +22,6 @@
 }
 
 .content-text {
-   max-width: 400px;
    padding: 2rem 1rem 2rem 0;
    color: #fff;
    display: flex;
@@ -40,6 +39,15 @@
    font-weight: 400;
    font-size: 12px;
    text-align: justify;
+
+   max-width: 300px;
+   max-height: 100px;
+
+   line-height: 14px;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
 }
 .content-text .genre-card {
    font-family: "Roboto";
