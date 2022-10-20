@@ -10,8 +10,8 @@ export function Router() {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/book/:id" element={<Book />} />
-            <Route path="/community/:id" element={<Book />} />
-            <Route path="quiz" element={<Header />} />
+            <Route path="community" element={<Header />} />
+            <Route path="/community/book/:id" element={<Book />} />
             <Route path="team" element={<Header />} />
          </Routes>
       </BrowserRouter>

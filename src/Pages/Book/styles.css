@@ -15,6 +15,10 @@
    justify-content: center;
    margin-top: 5rem;
    gap: 6rem;
+   padding-bottom: 20px;
+}
+.content-info img {
+   max-width: 400px
 }
 
 .content-book-text {
@@ -36,6 +40,7 @@
    font-size: 24px;
    color: #d2d2d2;
    margin-top: 4rem;
+   text-align: justify;
 }
 .content-book-text .content-info-book {
    font-family: "Roboto";
@@ -56,7 +61,7 @@
    justify-content: flex-end;
    gap: 8rem;
 }
-.content-button button.btn {
+.content-button .btn {
    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
    border-radius: 10px;
    padding: 0.8rem 3rem;
@@ -65,7 +70,10 @@
    font-weight: 400;
    font-size: 2rem;
    background: #E1B849;
+   border: none;
+   text-decoration: none;
+   color: #fff;
 }
-.content-button button.btn.pdf {
+.content-button .btn.pdf {
    background: #908DF2;
 }
