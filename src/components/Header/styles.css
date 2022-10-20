@@ -81,6 +81,7 @@
 .content-links li.active a{
     color:#908DF2;
     text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 .content-links li a:hover{
     color:#908DF2;
