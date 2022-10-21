@@ -72,3 +72,12 @@
    color: #000;
    cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+   .content-card{
+      margin-bottom: 10rem;
+   }
+   .content-card h2, .content-card p{
+      margin-bottom: 1.5rem;
+   }
+}

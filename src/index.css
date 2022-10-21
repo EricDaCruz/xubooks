@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root{
   font-size: 62.5%; /* 10px */
+}
+
+@media screen and (max-width: 768px) {
+  :root{
+    font-size: 40.5%;
+  }
 }

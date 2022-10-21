@@ -17,7 +17,6 @@
 .logo img {
    width: 6rem;
    height: 6rem;
-   margin-right: 6rem;
 }
 .logo p {
    color: #fff;
@@ -39,6 +38,7 @@
    align-items: center;
    border-radius: 4px;
    padding: 0 1.2rem;
+   margin: 0 3rem;
 }
 .content-search {
    flex: 1;
@@ -85,4 +85,31 @@
 }
 .content-links li a:hover{
     color:#908DF2;
+}
+
+@media screen and (min-width: 768px) {
+   .logo img{
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .header{
+      padding: 0 !important;
+   }
+   .container-search{
+      display: none;
+   }
+   .logo{
+      margin-right: 1rem;
+   }
+   .content-links{
+      gap: 1.5rem;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .header{
+      padding: 3rem;
+   }
 }
