@@ -77,3 +77,33 @@
 .content-button .btn.pdf {
    background: #908DF2;
 }
+
+@media screen and (max-width: 768px) {
+   .content-info{
+      display: block;
+   }
+   .content-info img{
+      max-width: 200px;
+   }
+   .content-info > div{
+      margin-bottom: 3rem;
+      text-align: center;
+   }
+   .content-book-text{
+      padding: 3rem;
+      max-width: 100%;
+   }
+   .content-book-text h2{
+      text-align: center;
+      margin-bottom: 1rem;
+   }
+   .content-book-text .genre{
+      text-align: center;
+   }
+   .description{
+      font-size: 16px !important;
+   }
+   .content-info-book, .content-button{
+      justify-content: center;
+   }
+}
