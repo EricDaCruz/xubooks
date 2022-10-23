@@ -50,8 +50,11 @@ export function Book() {
                      </p>
                   </div>
                   <div className="content-button">
-                     <Link to={`/community/book/${book.id}`} className="btn">Ver mais</Link>
-                     <a href={`/${book.urlPDF}`} download><button className="btn pdf">Baixar PDF</button></a>
+                     <Link to={`/community/book/${book.id}`} className="btn">Releituras</Link>
+                     <a href={`/${book.urlPDF}`} download><button className="btn pdf">Ver mais</button></a>
+                     {book.urlBook && (
+                        <a href={`${book.urlBook}`} target="_blank"><button className="btn btn-book">Ver Livro</button></a>
+                     )}
                   </div>
                </div>
             </div>
