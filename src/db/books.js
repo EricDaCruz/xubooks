@@ -33,4 +33,15 @@ export const Books = [
       releaseYear: "1977",
       urlPDF: "resenha-a-hora-da-estrela.pdf",
    },
+   {
+      id: 4,
+      title: "Sobrevivendo no Inferno",
+      review:
+         "Lançado em 1997, o álbum “Sobrevivendo no Inferno”, dos Racionais MC’s, consegue transparecer tudo o que a palavra “disrupção” significa: aquilo que causa rompimento ou destruição, algo que gera mudança, aquilo que quebra os paradigmas.",
+      banner: "https://m.media-amazon.com/images/I/71peoM4V0lL.jpg",
+      genre: ["Hip Hop", "Rap"],
+      author: "Racionais MC's",
+      releaseYear: "1997",
+      urlPDF: "resumo-sobrevivendo-no-inferno.pdf",
+   },
 ];
