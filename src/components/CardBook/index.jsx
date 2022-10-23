@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
 
-export function CardBook({book}) {
+export function CardBook({book, community}) {
    return (
       <div className="content-card">
          <div className="content-card-image">
@@ -20,7 +20,9 @@ export function CardBook({book}) {
                  book.genre.join(' - ')
                }
             </p>
-            <Link to={`/book/${book.id}`} className="button-card">Saiba Mais!</Link>
+            <Link to={community ? `/community/book/${book.id}` : `/book/${book.id}`} className="button-card">
+            {community ? `Ver Releituras` : `Saiba mais`}
+            </Link>
          </div>
       </div>
    );
