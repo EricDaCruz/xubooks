@@ -51,7 +51,7 @@ export function Book() {
                   </div>
                   <div className="content-button">
                      <Link to={`/community/book/${book.id}`} className="btn">Ver mais</Link>
-                     <a href={`/${book.urlPDF}`} download><button className="btn pdf">Abrir PDF</button></a>
+                     <a href={`/${book.urlPDF}`} download><button className="btn pdf">Baixar PDF</button></a>
                   </div>
                </div>
             </div>
