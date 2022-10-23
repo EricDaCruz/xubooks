@@ -72,3 +72,23 @@
    color: #000;
    cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+   .content-card{
+      margin-bottom: 10rem;
+   }
+   .content-card h2, .content-card p{
+      margin-bottom: 1.5rem;
+   }
+}
+@media screen and (max-width: 375px) {
+   .content-card-image{
+      margin-right: 4rem !important;
+   }
+   .image-card{
+      transform: scale(1.2, 1.1) !important;
+   }
+   .description-card{
+      -webkit-line-clamp: 4 !important;
+   }
+}
