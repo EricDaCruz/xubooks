@@ -10,7 +10,6 @@ import { Books } from "../../../db/books";
 
 export function Contribution() {
    const { id } = useParams();
-   const contribution = Array(5).fill(true);
 
    const [contributions, setContributions] = useState([]);
    const [book, setBook] = useState({});
@@ -18,11 +17,16 @@ export function Contribution() {
    useEffect(() => {
       let bookInfos = Books.find((book) => book.id == id); // pegando o livro pelo id
       setBook(bookInfos);
-      let contributionsByBook = CommunityContribution.filter(
-         (contribution) => contribution.bookId == book.id
-      );
-      setContributions(contributionsByBook);
-      console.log(contributionsByBook);
+
+      (function getContribution() {
+         let contributionsByBook = CommunityContribution.filter(
+            (contribution) => contribution.bookId == book.id
+         );
+         if (contributionsByBook.length > 0) {
+            setContributions(contributionsByBook);
+            console.log(contributionsByBook);
+         }
+      })();
    }, []);
 
    return (
@@ -32,26 +36,27 @@ export function Contribution() {
             <Link to="/">
                <ImArrowLeft2 />
             </Link>
+         </div>
+         <div className="titles">
             <h1>
                <strong>Comunidade:</strong> {book.title}
             </h1>
             <h2>Releituras:</h2>
-
-            {contributions.length >= 1 ? (
-               <div className="content-contribution">
-                  {contributions.map((item ) => (
-                     <div className="contribution" key={item.id}>
-                        <img src={`../../../assets/contributions/${item.image}`} />
-                        <h3>
-                           <strong>Ilustrador:</strong> {item.author}
-                        </h3>
-                     </div>
-                  ))}
-               </div>
-            ) : (
-               <h3>Nenhuma contribuição foi feita para esse livro ainda</h3>
-            )}
          </div>
+
+         {contributions.length === 0 ? (
+            <h3 className="not-found-contribution">
+               Nenhuma contribuição foi feita para esse livro ainda
+            </h3>
+         ) : (
+            <div className="content-contribution">
+               {contributions.map((item) => (
+                  <div className="contribution" key={item.id}>
+                     <img src={`/contributions/${item.image}`} />
+                  </div>
+               ))}
+            </div>
+         )}
       </div>
    );
 }
