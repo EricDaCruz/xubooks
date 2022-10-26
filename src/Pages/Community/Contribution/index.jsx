@@ -17,7 +17,9 @@ export function Contribution() {
    useEffect(() => {
       let bookInfos = Books.find((book) => book.id == id); // pegando o livro pelo id
       setBook(bookInfos);
+   }, []);
 
+   useEffect(() => {
       (function getContribution() {
          let contributionsByBook = CommunityContribution.filter(
             (contribution) => contribution.bookId == book.id
@@ -27,7 +29,7 @@ export function Contribution() {
             console.log(contributionsByBook);
          }
       })();
-   }, []);
+   }, [book]);
 
    return (
       <div>

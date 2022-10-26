@@ -14,7 +14,6 @@ export function Router() {
             <Route path="/book/:id" element={<Book />} />
             <Route path="community" element={<Community />} />
             <Route path="/community/book/:id" element={<Contribution />} />
-            <Route path="team" element={<Header />} />
          </Routes>
       </BrowserRouter>
    );
